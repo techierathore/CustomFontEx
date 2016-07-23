@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>UIDeviceFamily</key>
+	<array>
+		<integer>1</integer>
+		<integer>2</integer>
+	</array>
+	<key>UISupportedInterfaceOrientations</key>
+	<array>
+		<string>UIInterfaceOrientationPortrait</string>
+		<string>UIInterfaceOrientationLandscapeLeft</string>
+		<string>UIInterfaceOrientationLandscapeRight</string>
+	</array>
+	<key>UIAppFonts</key>
+	<array>
+		<string>Fonts/abeatbyKaiRegular.ttf</string>
+		<string>Fonts/GreatVibes-Regular.ttf</string>
+		<string>Fonts/MRF-BloomingPetunia.ttf</string>
+		<string>Fonts/MYRIADPRO-LIGHT.ttf</string>
+		<string>Fonts/MyriadPro-Semibold.ttf</string>
+		<string>Fonts/Neon.ttf</string>
+		<string>Fonts/waltographUI.ttf</string>
+	</array>
+	<key>UISupportedInterfaceOrientations~ipad</key>
+	<array>
+		<string>UIInterfaceOrientationPortrait</string>
+		<string>UIInterfaceOrientationPortraitUpsideDown</string>
+		<string>UIInterfaceOrientationLandscapeLeft</string>
+		<string>UIInterfaceOrientationLandscapeRight</string>
+	</array>
+	<key>MinimumOSVersion</key>
+	<string>6.0</string>
+	<key>CFBundleDisplayName</key>
+	<string>CustomFontEx</string>
+	<key>CFBundleIdentifier</key>
+	<string>com.yourcompany.CustomFontEx</string>
+	<key>CFBundleVersion</key>
+	<string>1.0</string>
+	<key>CFBundleIconFiles</key>
+	<array/>
+	<key>CFBundleShortVersionString</key>
+	<string></string>
+	<key>XSAppIconAssets</key>
+	<string>Resources/Media.xcassets/AppIcons.appiconset</string>
+</dict>
+</plist>

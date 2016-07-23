@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:CustomFontEx;assembly=CustomFontEx" 
+             x:Class="CustomFontEx.FontsEx" Title="Custom Font Example">
+	<StackLayout Spacing="10" Margin="20,20,20,20" >
+    
+    <StackLayout Orientation="Horizontal" Spacing="2">
+      <Label VerticalTextAlignment="Center" Text="Select Font" />
+      <Picker x:Name="pkrSelFont" SelectedIndexChanged="OnIndexChanged" WidthRequest="200" SelectedIndex="0" >
+        <Picker.Items>
+          <x:String>AbeatByKai</x:String>
+          <x:String>Great Vibes</x:String>
+          <x:String>MRF Blooming Petunia</x:String>
+          <x:String>Myriad Pro Light</x:String>
+          <x:String>Neon 80s</x:String>
+          <x:String>Waltograph UI</x:String>
+        </Picker.Items>
+      </Picker>
+    </StackLayout>
+    <Label Text="This custom font 'AbeatByKai' (First in selection picker) is Set in XAML as an Example, This will not change. " local:CustomFontEffect.FontFileName="abeatbyKaiRegular" >
+      <Label.FontFamily>
+        <OnPlatform x:TypeArguments="x:String">
+          <OnPlatform.iOS>AbeatByKai</OnPlatform.iOS>
+          <OnPlatform.Android></OnPlatform.Android>
+          <OnPlatform.WinPhone>/Assets/Fonts/abeatbyKaiRegular.ttf#AbeatByKai</OnPlatform.WinPhone>
+        </OnPlatform>
+      </Label.FontFamily>
+    </Label>
+    <Label x:Name="lblItalics" Text="Selected Font in Italics" FontAttributes="Italic" />
+    <Label x:Name="lblBold" Text="Selected Font in Bold" FontAttributes="Bold" />
+		<Label x:Name="lblBiggestSize" Text="Selected font in biggest named size i.e. Large" FontSize="Large" />
+		<Label x:Name="lblBoldMicro" Text="Specify Bold Attribute and Micro Size of Selected Font">
+		    <Label.FontAttributes>Bold</Label.FontAttributes>
+		    <Label.FontSize>Micro</Label.FontSize>
+		</Label>
+		<Label x:Name="lblMultiAttribue" Text="Implimented Multiple FontAttributes (Bold, Italics) to Selected Font" FontAttributes="Bold, Italic" />
+	</StackLayout>
+</ContentPage>
