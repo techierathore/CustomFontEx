@@ -3,8 +3,31 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:local="clr-namespace:CustomFontEx;assembly=CustomFontEx" 
              x:Class="CustomFontEx.FontsEx" Title="Custom Font Example">
+
+  <ContentPage.Resources>
+    <ResourceDictionary>
+      <Style TargetType="Label">
+        <Setter Property="HorizontalOptions"  Value="Center" />
+        <Setter Property="VerticalOptions"    Value="CenterAndExpand" />
+        <Setter Property="FontSize" Value="Large" />
+        <Setter Property="FontAttributes" Value="Bold"/>
+         <Setter Property="FontFamily">
+            <Setter.Value>
+              <OnPlatform x:TypeArguments="x:String">
+                <OnPlatform.iOS>Waltograph UI</OnPlatform.iOS>
+                <OnPlatform.WinPhone>/Assets/Fonts/waltographUI.ttf#Waltograph UI</OnPlatform.WinPhone>
+              </OnPlatform>
+            </Setter.Value>
+          </Setter>
+        <Setter Property="local:CustomFontEffect.FontFileName" Value="waltographUI" />
+      </Style>
+    </ResourceDictionary>
+  </ContentPage.Resources>
 	<StackLayout Spacing="10" Margin="20,20,20,20" >
-    
+
+    <Label Text="This Label has Font From Style on XAML Page" />
+
+
     <StackLayout Orientation="Horizontal" Spacing="2">
       <Label VerticalTextAlignment="Center" Text="Select Font" />
       <Picker x:Name="pkrSelFont" SelectedIndexChanged="OnIndexChanged" WidthRequest="200" SelectedIndex="0" >
